@@ -9,6 +9,13 @@ $jumbotron-bg: #bdc3c7;
 
 @import 'bootstrap';
 
+body {
+background-image: image-url('beautifulbook2.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+
+}
+
 .center {
      text-align: center;
 }
