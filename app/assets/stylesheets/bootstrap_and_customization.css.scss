@@ -2,10 +2,11 @@
 
 $body-bg: #ecf0f1;
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-inverse-bg: #27ae60;
+$navbar-inverse-bg: #5c8b47;
 $navbar-inverse-link-color: white;
-$brand-primary: #f39c12;
-$jumbotron-bg: #bdc3c7;
+$brand-primary: #b2452c;
+$jumbotron-bg: rgba(255,255,255,0.7);
+// $jumbotron-bg: #bdc3c7;
 
 @import 'bootstrap';
 
