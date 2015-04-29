@@ -1,19 +1,8 @@
-<h1>Listing pins</h1>
+<% if user_signed_in? %>
+  <%= link_to 'New Pin', new_pin_path %>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Description</th>
-      <th>User</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @pins.each do |pin| %>
+<% @pins.each do |pin| %>
       <tr>
         <td><%= image_tag pin.image.url(:medium) %></td>
         <td><%= pin.description %></td>
@@ -25,10 +14,5 @@
         <% end %>
       </tr>
     <% end %>
-  </tbody>
-</table>
+  <br>
 
-<br>
-<% if user_signed_in? %>
-  <%= link_to 'New Pin', new_pin_path %>
-<% end %>
