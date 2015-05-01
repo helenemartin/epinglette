@@ -10,10 +10,11 @@ $jumbotron-bg: rgba(255,255,255,0.7);
 
 @import 'bootstrap';
 
+
 body {
 background-image: image-url('beautifulbook2.jpg');
 background-repeat: no-repeat;
-background-size: 100%;
+// background-size: 75px 60px;
 
 }
 
