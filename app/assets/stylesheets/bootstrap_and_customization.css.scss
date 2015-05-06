@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 $body-bg: #ecf0f1;
-$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;      
 $navbar-inverse-bg: #5c8b47;
 $navbar-inverse-link-color: white;
 $brand-primary: #b2452c;
@@ -15,10 +15,11 @@ $jumbotron-bg: rgba(255,255,255,0.7);
 
 
 body {
-background-image: image-url('beautifulbook2.jpg');
-background-repeat: no-repeat;
-background-size: 100%;
-// background-size: 75px 60px;
+background-image: image-url('background.jpg');
+// background-repeat: no-repeat;
+// background-size: 100%;
+background-size: 142px 213px;
+
 
 }
 
@@ -26,9 +27,14 @@ background-size: 100%;
      text-align: center;
 }
 
-.navbar-brand {
-  
-     font-weight: bold;
 
+
+.navbar-brand {
+  font-weight: bold;
 }
+
+
+
+
+
 
