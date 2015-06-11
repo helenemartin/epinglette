@@ -6,7 +6,7 @@
         <%= link_to image_tag('epingle.png')%> 
         <%= link_to image_tag(pin.image.url(:medium)), pin %>        
           <div class="panel-body">
-          <p><%= pin.description %></p>
+          <p><%= truncate pin.description, length: 100 %></p>
           <p><strong><%= pin.user.name if pin.user %></strong></p>
 
             <% if pin.user == current_user %>

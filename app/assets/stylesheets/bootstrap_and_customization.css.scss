@@ -9,17 +9,17 @@ $jumbotron-bg: rgba(255,255,255,0.7);
 
 
 
+
 // $jumbotron-bg: #bdc3c7;
 
 @import 'bootstrap';
-
 
 body {
 background-image: image-url('background.jpg');
 // background-repeat: no-repeat;
 // background-size: 100%;
 background-size: 142px 213px;
-
+font-color: white;
 
 }
 
@@ -32,6 +32,15 @@ background-size: 142px 213px;
 .navbar-brand {
   font-weight: bold;
 }
+
+.alert p {
+  font-color: white;
+}
+
+p {
+  overflow: hidden;
+}
+
 
 
 
