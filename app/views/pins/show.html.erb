@@ -5,11 +5,11 @@
     <div class="box-view">
       <div class="panel-heading center">
         <div class="img-responsive">
-          <div class:"center">
+          <div class="center">
             <% if @pin.category.present? %>
               <%= link_to image_tag("#{@pin.category.image}.png") %> 
             <% else %>
-              <%= link_to image_tag("epingle.png") %> 
+              <%= link_to image_tag("epingle.png"), width: '100' %> 
             <% end %>
           </div>
           <%= image_tag @pin.image.url, width: '450' %>
