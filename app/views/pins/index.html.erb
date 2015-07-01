@@ -4,9 +4,9 @@
     <% @pins.each do |pin| %>
       <div class="box panel default" data-category="<%= pin.category.try(:name).try(:downcase) %>">
         <% if pin.category.present? %>
-          <%= link_to image_tag("#{pin.category.image}.png") %> 
+          <div class="pinimage"><%= link_to image_tag("#{pin.category.image}.png") %></div> 
         <% else %>
-          <%= link_to image_tag("epingle.png") %> 
+          <div class="pinimage"><%= link_to image_tag("epingle.png") %></div>
         <% end %>
         <%= link_to image_tag(pin.image.url(:medium)), pin %>        
           <div class="panel-body">

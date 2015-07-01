@@ -7,7 +7,7 @@
         <div class="img-responsive">
           <div class="center">
             <% if @pin.category.present? %>
-              <%= link_to image_tag("#{@pin.category.image}.png") %> 
+              <div class="pinimage"><%= link_to image_tag("#{@pin.category.image}.png") %></div>
             <% else %>
               <%= link_to image_tag("epingle.png"), width: '100' %> 
             <% end %>
