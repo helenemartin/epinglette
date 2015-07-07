@@ -1,0 +1,6 @@
+  <% if pind.category.present? %>
+          <div class="pinimage"><%= link_to image_tag("#{pind.category.image}.png") %></div> 
+        <% else %>
+          <div class="pinimage"><%= link_to image_tag("epingle.png") %></div>
+        <% end %>
+    
