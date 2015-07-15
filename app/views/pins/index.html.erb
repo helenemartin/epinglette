@@ -1,5 +1,12 @@
 <%= render 'pages/home' unless user_signed_in? %>
 
+<div class= "button">
+  <button class="button" data-filter="*">All</button>
+  <% @categories.each do |categorie| %>
+    <button class="button" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
+  <% end %>
+</div>
+
 <div id="pins" class="transitions-enabled">
     <% @pins.each do |pin| %>
       <div class="box panel default" data-category="<%= pin.category.try(:name).try(:downcase) %>">

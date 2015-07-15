@@ -3,8 +3,20 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $(window).load ->  $('#pins').isotope
- 
-    itemSelector: '.box'
-    isFitWidth: true
+  $(document).ready ->  
+    $('#pins').imagesLoaded().always ->
+      $('#pins').isotope(
+        itemSelector: '.box'
+        isFitWidth: true)
+
+    $(".button").on("click", ->
+      $('#pins').isotope(
+        filter:"[data-category*='"+$(this).attr('data-filter')+"']"
+      )
+    )
+
+
+      
+
+
 

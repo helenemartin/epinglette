@@ -16,4 +16,5 @@
 //= require jquery.turbolinks
 //= require turbolinks
 //= require isotope.pkgd.min
+//= require imagesloaded
 //= require_tree .
