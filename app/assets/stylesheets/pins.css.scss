@@ -56,9 +56,16 @@ img.img-responsive {
 
 
 .btn-lg-round{
-  border-radius: 25px;
-  background-color: magenta;
+  border-radius: 2px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  background-color: white;
   font-size: 20px;
-   
 
+
+}
+
+.btn-lg-round:hover {
+  background-color: #b2452c;
 }
