@@ -12,9 +12,10 @@ $ ->
 
     $(".button").on("click", ->
       console.log(this)
-      $('#pins').isotope(
-        filter:"[data-filter*=\""+$(this).attr('data-filter')+"\"]"
-      )
+      if $(this).attr('data-filter') == ""
+        $("#pins").isotope(filter:'*');
+      else
+        $('#pins').isotope(filter:"[data-filter*=\""+$(this).attr('data-filter')+"\"]")
     )
 
 
