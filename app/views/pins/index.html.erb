@@ -1,9 +1,9 @@
 <%= render 'pages/home' unless user_signed_in? %>
 
-<div class= "button">
-  <button class="button" data-filter="*">All</button>
+<div class= "btn-group btn-group-lg">
+  <button class="btn-lg" data-filter="*">All</button>
   <% @categories.each do |categorie| %>
-    <button class="button" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
+    <button class="btn-lg" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
   <% end %>
 </div>
 

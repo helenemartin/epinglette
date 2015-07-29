@@ -6,6 +6,7 @@ $ ->
   $(document).ready ->  
     $('#pins').imagesLoaded().always ->
       $('#pins').isotope(
+        
         itemSelector: '.box'
         isFitWidth: true)
 
