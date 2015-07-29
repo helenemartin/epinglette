@@ -11,13 +11,13 @@ $ ->
         isFitWidth: true)
 
     $(".button").on("click", ->
+      console.log(this)
       $('#pins').isotope(
-        filter:"[data-category*='"+$(this).attr('data-filter')+"']"
+        filter:"[data-filter*=\""+$(this).attr('data-filter')+"\"]"
       )
     )
 
 
-      
-
+    
 
 

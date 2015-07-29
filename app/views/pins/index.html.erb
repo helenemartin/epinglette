@@ -1,15 +1,15 @@
 <%= render 'pages/home' unless user_signed_in? %>
 
 <div class= "btn-group btn-group-lg" role="group">
-  <button class="btn-lg-round" data-filter="*">All</button>
+  <button class="btn-lg-round button" data-filter="">All</button>
   <% @categories.each do |categorie| %>
-    <button class="btn-lg-round" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
+    <button class="btn-lg-round button" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
   <% end %>
 </div>
 
 <div id="pins" class="transitions-enabled">
     <% @pins.each do |pin| %>
-      <div class="box panel default" data-category="<%= pin.category.try(:name).try(:downcase) %>">
+      <div class="box panel default" data-filter="<%= pin.category.try(:name).try(:downcase) %>">
         <% if pin.category.present? %>
           <div class="pinimage"><%= link_to image_tag("#{pin.category.image}.png") %></div> 
         <% else %>
