@@ -11,9 +11,17 @@
     </div>
   <% end %>
   <div class="panel-body">
+     <div class="form-group">
+    <%= f.label :category %>
+    <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+  </div>  
   <div class="form-group">
     <%= f.label :image %>
     <%= f.file_field :image, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :video_url%>
+    <%= f.text_field :video_url, class: "form-control" %>
   </div>
 
   <div class="form-group">
@@ -21,10 +29,7 @@
     <%= f.text_field :description, class: "form-control" %>
   </div>
   
-  <div class="form-group">
-    <%= f.label :category %>
-    <%= f.collection_select(:category_id, Category.all, :id, :name) %>
-  </div>   
+  
 
   <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>

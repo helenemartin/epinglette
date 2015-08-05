@@ -15,7 +15,9 @@
         <% else %>
           <div class="pinimage"><%= link_to image_tag("epingle.png") %></div>
         <% end %>
-        <%= link_to image_tag(pin.image.url(:medium)), pin %>        
+        
+            <%= link_to image_tag(pin.image.url(:medium)), pin %>
+                
           <div class="panel-body">
           <p><%= truncate pin.description, length: 150 %></p>
           <p><strong><%= pin.user.name if pin.user %></strong></p>
