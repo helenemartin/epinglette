@@ -34,6 +34,14 @@
 
 iframe {
   margin: 10px 15px;
+
+}
+
+.video-overlay {
+  height: 300px;
+  width: 300px;
+  z-index: 1000;
+  background-color: red;
 }
 
 img.img-responsive {

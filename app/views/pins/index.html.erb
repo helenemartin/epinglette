@@ -14,14 +14,22 @@
         
         
         <% if pin.category.name == "Video" %>
+          <%= link_to '', pin_path(pin), class: 'video-overlay'%>  
              <iframe src="http://player.vimeo.com/video/<%=vimeo_id(pin.video_url)%>" width="200"   
               height="200" frameborder="0">  
             </iframe>
+          
+
+
+  
+
+
           <% else %>
             <%= link_to pin_path(pin) do %>
             <%= image_tag pin.image.url, width: '450' %>
           <% end %>
           <% end %>
+
 
 
       
