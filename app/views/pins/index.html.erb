@@ -18,8 +18,11 @@
               height="200" frameborder="0">  
             </iframe>
           <% else %>
+            <%= link_to pin_path(pin) do %>
             <%= image_tag pin.image.url, width: '450' %>
           <% end %>
+          <% end %>
+
 
       
                 
