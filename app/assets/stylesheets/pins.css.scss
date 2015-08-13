@@ -38,10 +38,12 @@ iframe {
 }
 
 .video-overlay {
+  position: absolute;
   height: 300px;
   width: 300px;
   z-index: 1000;
-  background-color: red;
+  background: red;
+  opacity: 0.1;
 }
 
 img.img-responsive {
