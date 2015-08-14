@@ -13,7 +13,7 @@
             <% end %>
           </div>
           <% if @pin.category.name == "Video" %>
-            <iframe src="http://player.vimeo.com/video/<%=vimeo_id(@pin.video_url)%>" width="100%"   
+            <iframe class="view" src="http://player.vimeo.com/video/<%=vimeo_id(@pin.video_url)%>" width="100%"   
               height="500" frameborder="0" webkitallowfullscreen 
               mozallowfullscreen allowfullscreen>  
             </iframe>
