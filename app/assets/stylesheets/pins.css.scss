@@ -33,23 +33,24 @@
 
 
 iframe {
-  margin: 10px 15px;
+  margin: 5px 5px 0 -1px;
 
 }
 
 iframe.view {
   margin: 0;
+ 
 
 }
 
 .video-overlay {
   position: absolute;
-  height: 200px;
-  width: 200px;
-  margin: 10px 5px 0 15px;
+  height: 220px;
+  width: 220px;
+  margin: 5px 5px 0 5px;
   z-index: 1000;
   background: #ffffff;
-  opacity: 0.1;
+  opacity: 0;
  
     
 }

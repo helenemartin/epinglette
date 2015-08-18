@@ -1,4 +1,5 @@
 <%= form_for @pin, html: { multipart: true } do |f| %>
+
   <% if @pin.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this pin from being saved:</h2>
@@ -15,11 +16,12 @@
     <%= f.label :category %>
     <%= f.collection_select(:category_id, Category.all, :id, :name) %>
   </div>  
-  <div class="form-group">
+  <div class="form-group image">
     <%= f.label :image %>
     <%= f.file_field :image, class: "form-control" %>
   </div>
-  <div class="form-group">
+
+  <div class="form-group video">
     <%= f.label :video_url%>
     <%= f.text_field :video_url, class: "form-control" %>
   </div>
@@ -36,3 +38,34 @@
   </div>
 </div>
 <% end %>
+
+<script>
+$(document).ready(function() {
+
+  var onchange = function() {
+
+  
+  var value = $( "select#pin_category_id").val();
+  console.log(value);
+
+
+    if(value == 12) {
+
+      $('.form-group.video').show();
+      $('.form-group.image').hide();
+
+
+    } else {
+
+      $('.form-group.video').hide();
+      $('.form-group.image').show();
+    }
+ 
+}
+onchange();
+
+$( "select#pin_category_id").change(onchange);
+
+});
+  
+ </script>
