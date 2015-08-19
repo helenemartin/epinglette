@@ -1,9 +1,9 @@
-<%= link_to 'List', users_path %>
+<%= link_to 'List of users', users_path %>
 
 
 <% @users.each do |user| %>
 
-  <ul><%= link_to user.name, user_path(current_user) %></ul>
+  <ul><%= link_to user.name, user_path(user) %></ul>
 
 <% end %>
 
