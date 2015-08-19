@@ -1,0 +1,10 @@
+<%= link_to 'List', users_path %>
+
+
+<% @users.each do |user| %>
+
+  <ul><%= link_to user.name, user_path(current_user) %></ul>
+
+<% end %>
+
+
