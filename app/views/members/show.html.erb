@@ -1,17 +1,16 @@
-<%= render 'pages/home' unless user_signed_in? %>
 
-<div class= "btn-group btn-group-lg" role="group">
-  <button class="btn-lg-round button" data-filter="">All</button>
-  <% @categories.each do |categorie| %>
-    <button class="btn-lg-round button" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
-  <% end %>
-</div>
+
+<%= link_to 'Back to User list', members_path %>
+
+<h1><%=@user.name %></h1>
 
 <div id="pins" class="transitions-enabled">
+  
     <% @pins.each do |pin| %>
+    
+
       <div class="box panel default" data-filter="<%= pin.category.try(:name).try(:downcase) %>">
           <div class="pinimage"><%= link_to image_tag("#{pin.category.image}.png") %></div> 
-        
         
         <% if pin.category.name == "Video" %>
           <%= link_to '', pin_path(pin), class:'video-overlay'%>  
@@ -45,9 +44,3 @@
       </div>
   <% end %>
 </div>
-
-<div class="center">
-<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
-</div>
-
-
