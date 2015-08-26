@@ -12,19 +12,22 @@
               <%= link_to image_tag("epingle.png"), width: '100' %> 
             <% end %>
           </div>
+         
           <% if @pin.category.name == "Video" %>
             <iframe class="view" src="http://player.vimeo.com/video/<%=vimeo_id(@pin.video_url)%>" width="100%"   
               height="500" frameborder="0" webkitallowfullscreen 
               mozallowfullscreen allowfullscreen>  
             </iframe>
           <% else %>
-            <%= image_tag @pin.image.url, width: '450' %>
+           <div class="pinviewimage">
+            <%= image_tag @pin.image.url %>
+            </div>
           <% end %>
+            
         </div>
       </div>
-
       <div class="panel-body">
-        <p><%= @pin.description %></p>
+        <h6><%= @pin.description %></h6>
         <p><strong><%= @pin.user.name if @pin.user %></strong></p>           
         <% if @pin.user == current_user %>
           <div class="actions">
