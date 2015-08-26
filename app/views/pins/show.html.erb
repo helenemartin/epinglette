@@ -28,7 +28,7 @@
       </div>
       <div class="panel-body">
         <h6><%= @pin.description %></h6>
-        <p><strong><%= @pin.user.name if @pin.user %></strong></p>           
+        <p><strong><%= link_to @pin.user.name, member_path(@pin.user) if @pin.user %></strong></p>           
         <% if @pin.user == current_user %>
           <div class="actions">
             <%= link_to edit_pin_path(@pin) do%> 
