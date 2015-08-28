@@ -18,6 +18,7 @@ gem 'will_paginate-bootstrap'
 gem 'aws-sdk', '< 2.0'
 gem 'imagesLoaded_rails'
 gem 'vimeo'
+gem 'gravtastic'
 
 group :development, :test do
   gem 'sqlite3'
