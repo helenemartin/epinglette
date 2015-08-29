@@ -3,7 +3,7 @@
 <%= link_to 'User list', members_path %>
 
 <h1><%=@user.name %></h1>
-<td>%= image_tag @user.gravatar_url %><td>
+<li><%= gravatar_for @user %></li>
 
 <div id="pins" class="transitions-enabled">
   
