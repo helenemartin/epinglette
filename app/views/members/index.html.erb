@@ -4,7 +4,7 @@
 <% @users.each do |user| %>
  
   <ul><%= link_to user.name, member_path(user) %></ul>
-  
+  <ul><%= gravatar_for user %></ul>
 
 <% end %>
 

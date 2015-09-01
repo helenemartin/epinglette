@@ -2,8 +2,11 @@
 
 <%= link_to 'User list', members_path %>
 
-<h1><%=@user.name %></h1>
-<li><%= gravatar_for @user %></li>
+<h1>
+  <%=@user.name %>
+  <%=@user.website_url %>
+  <%= gravatar_for @user %>
+</h1>
 
 <div id="pins" class="transitions-enabled">
   
