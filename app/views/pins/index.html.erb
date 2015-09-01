@@ -27,7 +27,7 @@
                 
           <div class="panel-body">
           <p><%= truncate pin.description, length: 150 %></p>
-          <p><strong><%= link_to pin.user.name, member_path(pin.user) if pin.user %></strong></p>
+          <p><strong><%= link_to pin.user.name, user_path(pin.user) if pin.user %></strong></p>
 
             <% if pin.user == current_user %>
             <div class="actions">

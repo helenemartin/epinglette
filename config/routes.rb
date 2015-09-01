@@ -2,9 +2,9 @@ Epinglette::Application.routes.draw do
   resources :categories
 
   resources :pins
-  resources :members
 
-  devise_for :users
+  devise_for :users, :path_prefix => 'my', :controllers => { registrations: 'registrations'}
+  resources :users
   root "pins#index"
   get "about" => "pages#about"
   
