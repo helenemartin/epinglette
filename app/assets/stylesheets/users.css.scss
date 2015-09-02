@@ -3,18 +3,53 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#users {
+.users {
   margin: 0 auto;
-  width: 400px;
-  padding: 5px 10px 0 70px;
-  background-color: #ffffff;
-  border-radius: 8px
+  position: inline;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+ 
 
-  img { 
-  width: 20%;
-  padding: 5px;
-}
+
+  h1 {
+    text-align: center;
+  }
+
+  a {
+  text-decoration: none;
+  }
+
+
+  p {
+    text-align: center;
+    padding: 0 10px 15px 0;
+  }
+
+  img.gravatar { 
+    width: 50%;
+    border-radius: 50%;
+    padding: 20px;
+  }
  
 }
 
+
+ .users-show {
+  margin: 1px;
+  padding: 50px;
+  position: inline;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  float: left;
+
+   img.gravatar { 
+    
+    border-radius: 50%;
+    padding: 20px;
+  }
+
+  
+ }
 

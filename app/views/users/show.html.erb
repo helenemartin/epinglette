@@ -1,7 +1,7 @@
 
 
 <%= link_to 'User list', users_path %>
-<div id="users">
+<div class="users">
   <h1><%=@user.name %>
   <%= gravatar_for @user %></h1>
   <p><strong><%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%></strong></p>

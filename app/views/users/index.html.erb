@@ -2,9 +2,10 @@
 
 
 <% @users.each do |user| %>
-<div id="users">
-  <ul><%= gravatar_for user %></ul>
-  <ul><%= link_to user.name, user_path(user) %></ul>
+<div class="users-show">
+  <p><%= link_to user.name, user_path(user) %>
+      <%= gravatar_for user %></p>
+  
 </div>
 
 <% end %>
