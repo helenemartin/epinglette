@@ -4,7 +4,7 @@
 <div id="users">
   <h1><%=@user.name %>
   <%= gravatar_for @user %></h1>
-  <p><strong><%=@user.website_url %></strong></p>
+  <p><strong><%= link_to @user.website_url, @user.website_url, :target => "_blank" %></strong></p>
 </div>
 
 <div id="pins" class="transitions-enabled">
