@@ -4,4 +4,14 @@ module UsersHelper
     gravatar_url = "http://secure.gravatar.com/avatar/#{gravatar_id}"
     image_tag(gravatar_url, alt: user.name, class: "gravatar")
   end
+
+    def website_url(user)
+      if user.website_url 
+        user.website_url
+      else
+        
+        ''
+      end
+      
+    end
 end
