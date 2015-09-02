@@ -2,7 +2,7 @@
 
 
 <% @users.each do |user| %>
- 
+  <ul><%= gravatar_for user %></ul>
   <ul><%= link_to user.name, user_path(user) %></ul>
 
 <% end %>
