@@ -1,9 +1,14 @@
-
+<%= hidden_field_tag(:user_id, @user.id) %>
 
 <%= link_to 'User list', users_path %>
 <div class="users">
-  <h1><%=@user.name %>
-  <%= gravatar_for @user %></h1>
+  <%= image_tag @user.avatar.url %>
+  <h1><%=@user.name %></h1>
+  <div id="holder">
+  </div>
+  <p id="upload"><input type="file"></p>
+  
+
   <p><strong><%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%></strong></p>
 </div>
 
@@ -47,3 +52,26 @@
       </div>
   <% end %>
 </div>
+
+
+<script>
+
+  var fileupload = document.getElementById("upload")
+  var holder = document.getElementById("holder")
+  var user_id = document.getElementById("user_id").value
+  function readfiles(file) {
+    var formData = new FormData();
+    formData.append('file' , file[0]);
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST' , '/users/' + user_id + '/update_avatar');
+    xhr.send(formData);
+  }
+
+  holder.ondragover = function () { this.className = 'hover'; return false; };
+  holder.ondragend = function () { this.className = ''; return false; };
+  holder.ondrop = function (e) {
+    this.className = '' ;
+    e.preventDefault();
+    readfiles(e.dataTransfer.files);
+  }
+</script>

@@ -4,7 +4,12 @@ Epinglette::Application.routes.draw do
   resources :pins
 
   devise_for :users, :path_prefix => 'my', :controllers => { registrations: 'registrations'}
-  resources :users
+  resources :users do
+    member do
+      post :update_avatar
+    end
+  end
+
   root "pins#index"
   get "about" => "pages#about"
   

@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
+  protect_from_forgery except: :update_avatar
 
   def show
     @user= User.find(params[:id])
     @pins= @user.pins.order("created_at DESC")
+
   end
 
   def index
@@ -15,6 +17,14 @@ class UsersController < ApplicationController
     else
       render action: 'edit'
     end
+  end
+
+  def update_avatar
+    # params[:id] => user id
+    # params[:file] => image file
+    @user= User.find(params[:id])
+    @user.avatar = params[:file]
+    @user.save
   end
 
 # Never trust parameters from the scary internet, only allow the white list through.
