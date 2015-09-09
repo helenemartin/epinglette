@@ -60,13 +60,33 @@
  }
 
 #holder {
-  border: 10px dashed #ccc;
-  width: 300px;
-  min-height: 300px;
+  
+  
+ width: 300px;
   margin: 20px auto;
+  position: relative;
 
 }
 
 #holder.hover {
+  
   border: 10px dashed #0c0;
+  border-radius: 200px;
+}
+
+.users-avatar {
+  border: 10px dashed #ccc;
+  border-radius: 200px;
+  height: 100%;
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+}
+
+ .users-img {
+  z-index: 15;
+
+  border-radius: 300px;
+ 
+
 }

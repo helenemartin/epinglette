@@ -15,6 +15,7 @@ class MembersController < ApplicationController
       redirect_to @user, notice: 'Pin was successfully updated.'
     else
       render action: 'edit'
+  
     end
   end
 
