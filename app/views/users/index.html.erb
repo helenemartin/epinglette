@@ -4,7 +4,11 @@
 <% @users.each do |user| %>
 <div class="users-show">
   <p><%= link_to user.name, user_path(user) %>
+    <% if  user.avatar.present? %>
+      <%= image_tag user.avatar.url , class: 'users-img-index', width: '50'  %>
+    <% else %>
       <%= gravatar_for user %></p>
+    <% end %>
   
 </div>
 
