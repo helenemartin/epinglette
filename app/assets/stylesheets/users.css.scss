@@ -4,7 +4,7 @@
 
 
 .users {
-  margin: 5px 0 2px 70px;
+  margin: 120px 0 2px 70px;
   position: inline;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -40,8 +40,11 @@
  
 }
 
+.user-container {
+  margin-top: 80px;
+}
 
- .users-show {
+.users-show {
   margin: 1px;
   padding: 50px;
   position: inline;
@@ -63,6 +66,7 @@
   
   
  width: 300px;
+ height: 300px;
   margin: 20px auto;
   position: relative;
 
@@ -85,7 +89,6 @@
 
  .users-img {
   z-index: 15;
-
   border-radius: 300px;
  
 
