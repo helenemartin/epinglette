@@ -30,3 +30,15 @@
   </div><!-- /.navbar-collapse -->
 </nav>
 
+
+<script>
+  $(window).scroll(function() {
+  if ($(this).scrollTop() > 1){  
+      $('navbar-header').addClass("header.sticky");
+    }
+    else{
+      $('navbar-header').removeClass("header.sticky");
+    }
+  });
+
+</script>
