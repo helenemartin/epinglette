@@ -110,9 +110,12 @@
 }
 
 .users-tilted {
-  width: 100%;
+ 
   padding-top: 2px;
   padding-left: 5px;
   position: absolute;
 }
 
+img .users-tilted {
+  width: 100%;
+}

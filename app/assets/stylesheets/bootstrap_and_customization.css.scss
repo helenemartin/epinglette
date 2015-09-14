@@ -23,19 +23,30 @@ font-color: white;
 
 }
 
-.logo {
-
-  height: 10px;
+.logo a {
+  margin-left: 100px;
+  padding: 5px;
+  font-size: 100px;
+  font-family: 'Bauhaus93', "Lato", Helvetica, Arial, sans-serif;
 
 }
 
-.center {
-  text-align: center;
-}
+
+
+
+
+// .center {
+//   text-align: center;
+// }
 
 .jumbotron {
-  margin-top: 20px;
+  padding-top: 5px;
+  margin-top: 5px;
   text-align: center;
+
+    h1{
+      font-size: 50px;
+    }
 }
 
 .container {
@@ -43,7 +54,7 @@ font-color: white;
 }
 
 h1#site-logo a {
-  font-size: 50px;
+  font-size: 100px;
   margin-bottom: 20px;
 
 
