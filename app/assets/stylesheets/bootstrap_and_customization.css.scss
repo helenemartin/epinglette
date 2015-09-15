@@ -68,7 +68,12 @@ h1#site-logo.affix-top a {
 }
 
 
-
+.navbar-default .navbar-nav > li > a {
+  color: #f6f6df;
+  border-bottom: 1px solid transparent;
+  padding: 0; /*removing spacing*/
+  margin: 14px; /*add spacing*/
+}
 
 
 .navbar-inverse.navbar-default {
@@ -83,7 +88,7 @@ h1#site-logo.affix-top a {
 .navbar-inverse.navbar-default.affix-top {
   position: fixed;
   width: 100%;
-  height: 150px;
+  height: 115px;
   top: 0;
 
 

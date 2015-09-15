@@ -4,7 +4,7 @@
 
 
 .users {
-  margin: 0 0 20px 285px;
+  margin: 5px 0 15px 285px;
   padding-top: 2px;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -18,12 +18,19 @@
   }
 
   a {
-  text-decoration: none;
-  color: #7A7779;
+    color: #7A7779;
   }
 
   a:hover {
     text-decoration:line-through;
+  }
+
+  a:hover:after {
+    content: url(images/epingle.png); /* no need for qoutes */
+    display: block;
+    position: absolute;
+   
+    
   }
 
 
@@ -41,14 +48,14 @@
 }
 
 .user-container {
-  margin-top: 80px;
+  margin: 30px 0 0 120px;
 }
 
 .users-show {
-  margin: 1px;
+  margin: 3px;
   padding: 50px;
-  position: inline;
   width: 450px;
+  position: inline;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   float: left;
@@ -58,9 +65,6 @@
     border-radius: 50%;
     padding: 20px;
   }
- 
-
-
 
   
  }

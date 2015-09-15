@@ -1,6 +1,7 @@
 <%= render 'pages/home' unless user_signed_in? %>
 
 <div class= "pin-bar">
+  <span>Filter: </span>
   <button class="btn-lg-round button" data-filter="">All</button>
   <% @categories.each do |categorie| %>
     <button class="btn-lg-round button" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
