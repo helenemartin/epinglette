@@ -7,20 +7,21 @@
       <%= image_tag("tilted.png")%>
     </div>
         <h1><%=@user.name %></h1>
+    
       <div id="holder">
         <div class="users-avatar"></div>
          <%= image_tag @user.avatar.url , class: 'users-img', width: '300'  %>
-      </div>
-         <p>
-          <strong>
+        </div>
+          <p>
+            <strong>
             <%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%>
-          </strong>
-        </p>
-    </div>
+            </strong>
+          </p>
+        </div>
   
-    <div id="pins" class="transitions-enabled">
-        <% @pins.each do |pin| %>
-      <div class="box panel default" data-filter="<%= pin.category.try(:name).try(:downcase) %>">
+          <div id="pins" class="transitions-enabled">
+            <% @pins.each do |pin| %>
+          <div class="box panel default" data-filter="<%= pin.category.try(:name).try(:downcase) %>">
           <div class="pinimage">
             <%= link_to image_tag("#{pin.category.image}.png") %>
           </div> 

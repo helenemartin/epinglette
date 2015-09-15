@@ -17,7 +17,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.9);
 }
 
 
@@ -30,7 +30,7 @@
 
 .box {
   background-color: rgba(255, 255, 255, 0.9);
-  margin: 2px;
+  margin: 6px;
   width: 250px;
   padding: 15px 10px;
   border-radius: 8px;
@@ -112,29 +112,26 @@ img.img-responsive {
 }
 
 
-.btn-group.btn-group-lg {
-  margin: 0 60px;
+// .btn.btn-link.button {
+//   margin: 0 60px;
 
-}
+// }
 
 
-.btn-lg-round {
+.btn.btn-link.button {
  
-  border-radius: 8px;
-  outline: none;
-  padding: 10px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  background-color: white;
-  font-size: 20px;
-  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+ border: none;
+ color: #7A7779;
+ padding-top: 10px;
+ padding-left: 25px;
+ padding-bottom: 10px;
 
 }
 
-.btn-lg-round:hover{
-  background-color: rgba(255,255,255,0.4);
-  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
-  outline: none;
+.btn.btn-link.button:hover {
+  
+  text-decoration: underline;
+  
 }
 .avatar {
   border-radius: 100%;
