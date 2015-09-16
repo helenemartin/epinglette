@@ -1,9 +1,10 @@
 <%= render 'pages/home' unless user_signed_in? %>
 
 <div class= "pin-bar">
-  <span>Filter: </span>
-  <button class="btn btn-link button" data-filter="">All</button>
-  <% @categories.each do |categorie| %>
+
+  <span class="btn btn-link button">Filter: </span>
+    <button class="btn btn-link button" data-filter="">All</button>
+      <% @categories.each do |categorie| %>
     <button class="btn btn-link button" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
   <% end %>
 </div>
@@ -12,36 +13,30 @@
     <% @pins.each do |pin| %>
       <div class="box panel default" data-filter="<%= pin.category.try(:name).try(:downcase) %>">
           <div class="pinimage"><%= link_to image_tag("#{pin.category.image}.png") %></div> 
-        
-        
-        <% if pin.category.name == "Video" %>
-          <%= link_to '', pin_path(pin), class:'video-overlay'%>  
-             <iframe src="http://player.vimeo.com/video/<%=vimeo_id(pin.video_url)%>" width="230"   
-              height="230" frameborder="0">  
-            </iframe>
-
+          <% if pin.category.name == "Video" %>
+            <%= link_to '', pin_path(pin), class:'video-overlay'%>  
+            <iframe src="http://player.vimeo.com/video/<%=vimeo_id(pin.video_url)%>" width="230" height="230" frameborder="0">  
+              </iframe>
           <% else %>
             <%= link_to pin_path(pin) do %>
             <%= image_tag pin.image.url, width: '450' %>
           <% end %>
-          <% end %>
-                
-          <div class="panel-body">
-          <p><%= truncate pin.description, length: 150 %></p>
-          <p><strong><%= link_to pin.user.name, user_path(pin.user) if pin.user %></strong></p>
-
-            <% if pin.user == current_user %>
-            <div class="actions">
-            <%= link_to edit_pin_path(pin) do %>
-                <span class="glyphicon glyphicon-edit"></span>
-                Edit
-            <% end %>
-            <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <span class="glyphicon glyphicon-trash"></span>
-              Delete
-            <% end %>
+          <% end %>           
+            <div class="panel-body">
+              <p><%= truncate pin.description, length: 150 %></p>
+                <p><strong><%= link_to pin.user.name, user_path(pin.user) if pin.user %></strong></p>
+                  <% if pin.user == current_user %>
+                  <div class="actions">
+                    <%= link_to edit_pin_path(pin) do %>
+                  <span class="glyphicon glyphicon-edit"></span>
+                  Edit
+                  <% end %>
+                    <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                <span class="glyphicon glyphicon-trash"></span>
+                Delete
+              <% end %>
             </div>
-         <% end %>
+          <% end %>
        </div>
       </div>
   <% end %>
