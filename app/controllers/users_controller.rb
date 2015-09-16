@@ -23,10 +23,12 @@ class UsersController < ApplicationController
     # params[:id] => user id
     # params[:file] => image file
     @user= User.find(params[:id])
+    if @user == current_user
     @user.avatar = params[:file]
     @user.save
     render js: "window.location.reload();"
   end
+end
 
 # Never trust parameters from the scary internet, only allow the white list through.
   def user_params

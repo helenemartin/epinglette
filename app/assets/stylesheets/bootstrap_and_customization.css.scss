@@ -23,7 +23,7 @@ font-color: white;
 
 
 .logo {
-  margin-left: 100px;
+  margin-left: 75px;
   padding: 5px;
   font-size: 100px;
   font-family: 'Bauhaus93', "Lato", Helvetica, Arial, sans-serif;
@@ -39,13 +39,14 @@ font-color: white;
 
 .jumbotron {
   padding-top: 5px;
-  margin-top: 5px;
+  margin-top: -10px;
   text-align: center;
   position: relative;
   z-index: 100;
 
     h1{
       font-size: 50px;
+      color: #7A7779;
 
     }
 }
@@ -57,7 +58,8 @@ font-color: white;
 h1#site-logo a {
   font-size: 100px;
   margin-bottom: 20px;
-  color: pink;
+  color: #FFB6CA;
+  opacity: 0.9;
 
 
 
@@ -69,12 +71,15 @@ h1#site-logo.affix-top a {
 }
 
 
+
 .navbar-default .navbar-nav > li > a {
   color: #f6f6df;
   border-bottom: 1px solid transparent;
-  padding: 0; /*removing spacing*/
-  margin: 14px; /*add spacing*/
+  padding: 0;
+  margin: 48px 10px 15px 18px;
+  font-size: 18px;
 }
+
 
 
 .navbar-inverse.navbar-default {
