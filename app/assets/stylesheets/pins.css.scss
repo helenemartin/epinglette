@@ -126,8 +126,10 @@ span {
 
 }
 
-.btn.btn-link.button {
- 
+// pin filter bar pins
+
+.btn.btn-link.button.ming {
+
  border: none;
  color: #7A7779;
  padding-top: 10px;
@@ -136,6 +138,20 @@ span {
  font-size: 20px;
 
 }
+
+.btn.btn-link.button.ming:hover:after {
+  position: relative;
+ 
+}
+
+.btn.btn-link.button.ming:hover:after {
+  content: image-url('ming.png');
+  position: absolute;
+  margin: -70px 0 0 -210px;
+  display: block;
+   
+}
+
 
 
 .btn.btn-link.button:hover{
