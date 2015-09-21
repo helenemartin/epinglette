@@ -157,12 +157,13 @@ span {
  padding-top: 10px;
  padding-left: 25px;
  padding-bottom: 10px;
- font-size: 20px;
+    
 
 }
 
-.btn.btn-link.button.red:hover:after {
+.btn.btn-link.button.red:hover{
   position: relative;
+
  
 }
 
@@ -171,6 +172,10 @@ span {
   position: absolute;
   margin: -70px 0 0 -210px;
   display: block;
+  width: 20px;
+  
+
+
    
 }
 
@@ -186,7 +191,7 @@ span {
 
 }
 
-.btn.btn-link.button.ming:hover:after {
+.btn.btn-link.button.ming:hover {
   position: relative;
  
 }
@@ -210,7 +215,7 @@ span {
 
 }
 
-.btn.btn-link.button.purple:hover:after {
+.btn.btn-link.button.purple:hover {
   position: relative;
  
 }
@@ -235,7 +240,7 @@ span {
 
 }
 
-.btn.btn-link.button.black:hover:after {
+.btn.btn-link.button.black:hover {
   position: relative;
  
 }
@@ -252,6 +257,7 @@ span {
 .btn.btn-link.button.orange {
 
  border: none;
+ text-decoration: none;
  color: #7A7779;
  padding-top: 10px;
  padding-left: 25px;
@@ -260,7 +266,7 @@ span {
 
 }
 
-.btn.btn-link.button.orange:hover:after {
+.btn.btn-link.button.orange:hover {
   position: relative;
  
 }
@@ -268,7 +274,7 @@ span {
 .btn.btn-link.button.orange:hover:after {
   content: image-url('orange.png');
   position: absolute;
-  margin: -70px 0 0 -210px;
+  margin: -25px 0 0 -60px;
   display: block;
    
 }
@@ -284,13 +290,14 @@ span {
 
 }
 
-.btn.btn-link.button.cream:hover:after {
+.btn.btn-link.button.cream:hover {
   position: relative;
  
 }
 
 .btn.btn-link.button.cream:hover:after {
   content: image-url('cream.png');
+  size: 5px;
   position: absolute;
   margin: -70px 0 0 -210px;
   display: block;
