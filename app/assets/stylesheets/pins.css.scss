@@ -131,6 +131,7 @@ span {
 .btn.btn-link.button {
 
  border: none;
+ text-decoration: none;
  color: #7A7779;
  padding-top: 10px;
  padding-left: 25px;
@@ -150,9 +151,12 @@ span {
 
 // pin filter bar pins
 
+//red pin
+
 .btn.btn-link.button.red {
 
  border: none;
+ text-decoration: none;
  color: #7A7779;
  padding-top: 10px;
  padding-left: 25px;
@@ -170,19 +174,19 @@ span {
 .btn.btn-link.button.red:hover:after {
   content: image-url('red.png');
   position: absolute;
-  margin: -70px 0 0 -210px;
+  margin: -25px 0 0 -60px;
   display: block;
   width: 20px;
   
-
-
    
 }
 
+//ming-pin
 
 .btn.btn-link.button.ming {
 
  border: none;
+ text-decoration: none;
  color: #7A7779;
  padding-top: 10px;
  padding-left: 25px;
@@ -199,14 +203,17 @@ span {
 .btn.btn-link.button.ming:hover:after {
   content: image-url('ming.png');
   position: absolute;
-  margin: -70px 0 0 -210px;
+  margin: -20px 0 0 -60px;
   display: block;
    
 }
 
+//purple-pin
+
 .btn.btn-link.button.purple {
 
  border: none;
+ text-decoration: none;
  color: #7A7779;
  padding-top: 10px;
  padding-left: 25px;
@@ -223,15 +230,17 @@ span {
 .btn.btn-link.button.purple:hover:after {
   content: image-url('purple.png');
   position: absolute;
-  margin: -70px 0 0 -210px;
+  margin: -20px 0 0 -25px;
   display: block;
    
 }
 
+//black-pin
 
 .btn.btn-link.button.black {
 
  border: none;
+ text-decoration: none;
  color: #7A7779;
  padding-top: 10px;
  padding-left: 25px;
@@ -248,11 +257,12 @@ span {
 .btn.btn-link.button.black:hover:after {
   content: image-url('black.png');
   position: absolute;
-  margin: -70px 0 0 -210px;
+  margin: -20px 0 0 -60px;
   display: block;
    
 }
 
+//orange-pin
 
 .btn.btn-link.button.orange {
 
@@ -279,9 +289,12 @@ span {
    
 }
 
+//cream-pin
+
 .btn.btn-link.button.cream {
 
  border: none;
+ text-decoration: none;
  color: #7A7779;
  padding-top: 10px;
  padding-left: 25px;
@@ -299,7 +312,7 @@ span {
   content: image-url('cream.png');
   size: 5px;
   position: absolute;
-  margin: -70px 0 0 -210px;
+  margin: -13px 0 0 -45px;
   display: block;
    
 }
