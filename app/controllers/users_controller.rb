@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update(pin_params)
+    if @user.update(users_params)
       redirect_to @user, notice: 'Pin was successfully updated.'
     else
       render action: 'edit'

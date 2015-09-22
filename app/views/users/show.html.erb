@@ -13,6 +13,7 @@
            <%= image_tag @user.avatar.url , class: 'users-img', width: '300'  %>
           </div>
           <p>
+            <%=@user.bio %></br>
             <strong>
             <%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%>
             </strong>
