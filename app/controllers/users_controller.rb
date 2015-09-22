@@ -32,7 +32,7 @@ end
 
 # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
-    params.require(:pin).permit(:password, :website_url, :name)
+    params.require(:pin).permit(:password, :website_url, :bio, :name)
   end
 
 end
