@@ -19,9 +19,11 @@ gem 'aws-sdk', '< 2.0'
 gem 'imagesLoaded_rails'
 gem 'vimeo'
 gem 'gravtastic', '~> 3.2.6'
-
+gem 'rmagick'
 group :development, :test do
   gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :production do

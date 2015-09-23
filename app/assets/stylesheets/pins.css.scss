@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#pins {
-  margin: 0 5px 0 100px;
+#pins.transitions-enabled {
+  margin: auto 0;
   padding: 5px 5px 0 15px;
 }
 
@@ -185,10 +185,10 @@ span {
   position: absolute;
   margin: -25px 0 0 -60px;
   display: block;
-  width: 20px;
-  
    
 }
+
+
 
 //ming-pin
 

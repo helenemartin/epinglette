@@ -10,7 +10,7 @@
         
         <div id="holder">
           <div class="users-avatar">
-           <%= image_tag @user.avatar.url , class: 'users-img', width: '300'  %>
+           <%= image_tag @user.avatar.url(:thumb) , class: 'users-img' %>
           </div>
           <p>
           <%=@user.bio %>

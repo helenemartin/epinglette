@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     @user.avatar = params[:file]
     @user.save
     render js: "window.location.reload();"
-  end
+     end
 end
 
 # Never trust parameters from the scary internet, only allow the white list through.
