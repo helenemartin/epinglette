@@ -86,7 +86,7 @@
   height: 100%;
   z-index: 1;
   width: 100%;
-  position: absolute;
+  
 }
 
  .users-img {
@@ -97,7 +97,11 @@
  
 
 }
-
+.users-bio {
+  font-family: "lato", "Helvetica";
+  font-size: 15px;
+  text-align: center;
+}
 
  .users-img-index{
   
