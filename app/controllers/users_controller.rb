@@ -8,7 +8,9 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users= User.all
+    @q = User.ransack(params[:q])
+    # @users = @q.result(distinct: true)
+    @users = @q.result.includes(:pins)
   end
 
   def update

@@ -20,6 +20,7 @@ gem 'imagesLoaded_rails'
 gem 'vimeo'
 gem 'gravtastic', '~> 3.2.6'
 gem 'rmagick'
+gem 'ransack'
 group :development, :test do
   gem 'sqlite3'
   gem 'better_errors'

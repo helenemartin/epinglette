@@ -2,7 +2,13 @@
 <div class="center">
   <h1>List of Users</h1>
 </div>
+      <%= search_form_for @q do |f| %>
+      <%= f.label :search %>
+      <%= f.search_field :name_or_pins_description_cont %>
 
+
+      <%= f.submit %>
+    <% end %>
     <% @users.each do |user| %>
       <div class="user-container">
         <div class="users-show">
