@@ -37,7 +37,7 @@
     text-align: justify;
     line-height: 1.3em;
     margin: 0;
-    text-indent: 10px;
+    text-indent: 20px;
     left: 0;
     padding-top: 20px;
     padding-left: 0 !important;
@@ -75,12 +75,12 @@
  }
 
 #holder {
-  
-  
- width: 50%;
- height: 50%;
+  width: 50%;
+  height: 50%;
   margin: 20px auto;
   position: relative;
+  border: 5px dashed #ccc;
+  border-radius: 300px;
 
 }
 
@@ -96,8 +96,7 @@
 }
 
 .users-avatar {
-  border: 5px dashed #ccc;
-  border-radius: 300px;
+  
   height: 100%;
   z-index: 1;
   width: 100%; 
@@ -108,19 +107,30 @@
   z-index: 100;
   border-radius: 300px;
   width: 100%;
- 
- 
-
 }
+
 .users-bio {
   font-family: "lato", "Helvetica";
   font-size: 15px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0 5px 0 5px;
+}
+
+.users-web-link {
+  padding: 20px;
+  text-align: center;
+}
+
+.users-name h1 {
+  font-family: "Bauhaus 93", "Helvetica;";
+  color: #474444;
+
 }
 
 
 
- .users-img-index{
-  
+.users-img-index{
   border-radius: 50%;
   border: 1px dashed #ccc;
   float: right !important;
@@ -128,7 +138,6 @@
 }
 
 .users-tilted {
- 
   padding-top: 2px;
   padding-left: 5px;
   position: absolute;

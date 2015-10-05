@@ -17,10 +17,6 @@
   width: 100%;
   background: rgba(255,255,255,0.9);
 
-  img {
-    width: 20%;
-
-  }
 }
 
 
@@ -143,7 +139,6 @@ span {
 }
 
 .btn.btn-link.button {
-
  border: none;
  text-decoration: none;
  color: #7A7779;
@@ -152,7 +147,9 @@ span {
  padding-bottom: 10px;
  font-size: 20px;
 
+
 }
+  
 
 .btn.btn-link.button:hover{
   border: none;
@@ -190,8 +187,13 @@ span {
   position: absolute;
   margin: -25px 0 0 -60px;
   display: block;
+    
    
 }
+
+
+
+
 
 
 

@@ -5,8 +5,8 @@
   <span class="btn btn-link">Filter: </span>
     <button class="btn btn-link button" data-filter="">All</button>
       <% @categories.each do |categorie| %>
-    <button class="btn btn-link button <%= categorie.image %>" size: '10x10' data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
-  <% end %>
+      <button class="btn btn-link button <%= categorie.image %>" data-filter="<%= categorie.try(:name).try(:downcase) %>"><%= categorie.name %></button>
+      <% end %>
 </div>
 
 <div id="pins" class="transitions-enabled">

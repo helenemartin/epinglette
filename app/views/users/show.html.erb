@@ -5,23 +5,22 @@
 <div class="users">
     <div class="users-tilted">
       <%= image_tag("tilted.png")%>
-    </div>
-        <h1><%=@user.name %></h1>
-        
-        <div id="holder">
-          <div class="users-avatar">
-           <%= image_tag @user.avatar.url(:medium) , class: 'users-img' %>
-          </div>
-          <p class="users-bio">
-          <%=@user.bio %>
-          </p>
-
-            <strong>
-            <%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%>
-            </strong>
-          
       </div>
+        <div class="users-name">
+         <h1><%=@user.name %></h1>
+          </div>
+          <div id="holder">
+            <div class="users-avatar">
+             <%= image_tag @user.avatar.url(:medium) , class: 'users-img' %>
+            </div>
+          </div>
+          <div class="users-bio">
+        <p><%=@user.bio %></p>
+      <div class="users-web-link">
+        <strong><%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%></strong>  
     </div>
+  </div>
+</div>
   
 <div id="pins" class="transitions-enabled">
     <% @pins.each do |pin| %>
