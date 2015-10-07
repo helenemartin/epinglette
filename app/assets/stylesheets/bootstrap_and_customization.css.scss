@@ -59,7 +59,7 @@ font-color: white;
 h1#site-logo a {
   font-size: 100px;
   margin-bottom: 20px;
-  color: #FFB6CA;
+  color: #e09a84;
   opacity: 0.9;
 
 
@@ -100,6 +100,12 @@ h1#site-logo.affix-top a {
   top: 0;
 
 
+}
+
+
+
+a.avatar:hover {
+  cursor: pointer;
 }
 
 
