@@ -103,7 +103,12 @@ h1#site-logo.affix-top a {
 }
 
 
-
+a.avatar {
+  img {
+    width:20%;
+    border-radius: 300px;
+  }
+}
 a.avatar:hover {
   cursor: pointer;
 }
