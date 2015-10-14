@@ -153,7 +153,7 @@ span {
 
 .btn.btn-link.button:hover{
   border: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .btn.btn-link.button:focus {
@@ -183,9 +183,9 @@ span {
 }
 
 .btn.btn-link.button.red:hover:after {
-  content: image-url('red.png');
+  content: image-url('redpin.png');
   position: absolute;
-  margin: -25px 0 0 -60px;
+  margin: -30px 0 0 -20px;
   display: block;
  
 }
@@ -213,9 +213,9 @@ span {
 }
 
 .btn.btn-link.button.ming:hover:after {
-  content: image-url('ming.png');
+  content: image-url('mingpin.png');
   position: absolute;
-  margin: -20px 0 0 -60px;
+  margin: -30px 0 0 -20px;
   display: block;
    
 }
@@ -240,9 +240,9 @@ span {
 }
 
 .btn.btn-link.button.purple:hover:after {
-  content: image-url('purple.png');
+  content: image-url('purplepin.png');
   position: absolute;
-  margin: -20px 0 0 -25px;
+  margin: -30px 0 0 -20px;
   display: block;
    
 }
@@ -267,9 +267,9 @@ span {
 }
 
 .btn.btn-link.button.black:hover:after {
-  content: image-url('black.png');
+  content: image-url('blackpin.png');
   position: absolute;
-  margin: -20px 0 0 -60px;
+  margin: -30px 0 0 -20px;
   display: block;
    
 }
@@ -294,9 +294,9 @@ span {
 }
 
 .btn.btn-link.button.orange:hover:after {
-  content: image-url('orange.png');
+  content: image-url('orangepin.png');
   position: absolute;
-  margin: -25px 0 0 -60px;
+  margin: -30px 0 0 -20px;
   display: block;
    
 }
@@ -321,10 +321,10 @@ span {
 }
 
 .btn.btn-link.button.cream:hover:after {
-  content: image-url('cream.png');
+  content: image-url('creampin.png');
   size: 5px;
   position: absolute;
-  margin: -13px 0 0 -45px;
+  margin: -30px 0 0 -20px;
   display: block;
    
    img {
