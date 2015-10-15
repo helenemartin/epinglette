@@ -75,8 +75,8 @@
  }
 
 #holder {
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 200px;
   margin: 20px auto;
   position: relative;
   border: 5px dashed #ccc;
@@ -87,8 +87,8 @@
 
 
 #holder.hover {
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 200px;
   border: 5px dashed #0c0;
   border-radius: 300px;
   position: inherit;
@@ -146,4 +146,21 @@
 
 .users-tilted img {
   width: 80%;
+}
+
+.avatarbrowser {
+    display: none;
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 11.25rem;
+    font-size: 0.75rem;
+    -webkit-transition: opacity 150ms ease;
+    transition: opacity 150ms ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    overflow: hidden;
 }

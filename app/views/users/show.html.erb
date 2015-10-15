@@ -70,7 +70,14 @@
     var xhr = new XMLHttpRequest();
     xhr.open('POST' , '/users/' + user_id + '/update_avatar');
     xhr.send(formData);
-    window.location.reload();
+    xhr.addEventListener("load", transferComplete);
+    // window.location.reload();
+  }
+  function transferComplete() { 
+     window.location.reload();
+
+
+
   }
 
   holder.ondragover = function () { this.className = 'hover'; return false; };
