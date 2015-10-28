@@ -240,7 +240,7 @@ span {
 }
 
 .btn.btn-link.button.purple:hover:after {
-  content: image-url(asset_path('purple.png'));;
+  content: image-url(asset_path('purplepin.png'));;
   position: absolute;
   margin: -30px 0 0 -20px;
   display: block;
@@ -267,7 +267,7 @@ span {
 }
 
 .btn.btn-link.button.black:hover:after {
-  content: image-url(asset_path('black.png'));;
+  content: image-url(asset_path('blackpin.png'));;
   position: absolute;
   margin: -30px 0 0 -20px;
   display: block;
@@ -294,7 +294,7 @@ span {
 }
 
 .btn.btn-link.button.orange:hover:after {
-  content: image-url(asset_path('orange.png'));;
+  content: image-url(asset_path('orangepin.png'));;
   position: absolute;
   margin: -30px 0 0 -20px;
   display: block;
@@ -321,7 +321,7 @@ span {
 }
 
 .btn.btn-link.button.cream:hover:after {
-  content: image-url('creampin.png');
+  content: image-url(asset_path('creampin.png'));
   size: 5px;
   position: absolute;
   margin: -30px 0 0 -20px;
