@@ -45,11 +45,11 @@ $(document).ready(function() {
   var onchange = function() {
 
   
-  var value = $( "select#pin_category_id").val();
+  var value = $("select#pin_category_id").find(':selected').text().toLowerCase()
   console.log(value);
 
 
-    if(value == 12) {
+    if(value == 'video') {
 
       $('.form-group.video').show();
       $('.form-group.image').hide();
