@@ -17,5 +17,5 @@
 
 # image files uploaded through paperclip
 /public/system
-
+/public/assets
 

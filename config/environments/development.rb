@@ -22,10 +22,15 @@ Epinglette::Application.configure do
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
 
+  config.assets.digest = true
+  # config.serve_static_assets = true
+  config.assets.compile = false
+
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   
 end

@@ -15,7 +15,7 @@ $jumbotron-bg: rgba(255,255,255,0.7);
 @import 'bootstrap';
 
 body {
-background-image: image-url('background.jpg');
+background-image: image-url(asset_path('background.jpg'));
 background-size: 93px 91px;
 font-color: white;
 
