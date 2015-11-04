@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
@@ -22,4 +25,6 @@ class User < ActiveRecord::Base
 
   validates_attachment_file_name :avatar, :matches => [/png\Z/, /jpe?g\Z/ , /gif\Z/]
   validates :name, presence: true
+
+  
 end

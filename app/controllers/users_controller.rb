@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   protect_from_forgery except: :update_avatar
 
   def show
-    @user= User.find(params[:id])
+    @user= User.friendly.find(params[:id])
     @pins= @user.pins.order("created_at DESC")
 
   end
