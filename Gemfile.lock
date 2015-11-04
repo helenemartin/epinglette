@@ -42,6 +42,7 @@ GEM
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
     builder (3.1.4)
+    cancancan (1.13.1)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.7)
@@ -201,6 +202,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
+  cancancan (~> 1.10)
   coffee-rails (~> 4.0.0)
   devise (= 3.1.0.rc2)
   factory_girl_rails
@@ -225,3 +227,6 @@ DEPENDENCIES
   vimeo
   will_paginate (~> 3.0.5)
   will_paginate-bootstrap
+
+BUNDLED WITH
+   1.10.6
