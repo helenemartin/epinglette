@@ -24,7 +24,7 @@ Epinglette::Application.configure do
 
   config.assets.digest = true
   # config.serve_static_assets = true
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large

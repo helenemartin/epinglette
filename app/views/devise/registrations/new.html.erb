@@ -1,3 +1,5 @@
+<%= hidden_field_tag(:user_id, @user.id) %>
+
 <div class="panel panel-default">
   <div class="panel-heading">
     <h1>Sign up</h1>
@@ -51,4 +53,34 @@
   </div>
 </div>
 
+<script>
+
+  var fileupload = document.getElementById("upload")
+  var holder = document.getElementById("holder")
+  var user_id = document.getElementById("user_id").value
+  function readfiles(file) {
+    var formData = new FormData();
+    formData.append('file' , file[0]);
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST' , '/users/' + user_id + '/update_avatar');
+    xhr.send(formData);
+    xhr.addEventListener("load", transferComplete);
+    // window.location.reload();
+  }
+  
+  function transferComplete() { 
+     window.location.reload();
+
+
+
+  }
+
+  holder.ondragover = function () { this.className = 'hover'; return false; };
+  holder.ondragend = function () { this.className = ''; return false; };
+  holder.ondrop = function (e) {
+    this.className = '' ;
+    e.preventDefault();
+    readfiles(e.dataTransfer.files);
+  }
+</script>
 
