@@ -1,7 +1,6 @@
 <%= render 'pages/home' unless user_signed_in? %>
 
 <div class= "pin-bar">
-
   <span class="btn btn-link">Filter: </span>
     <button class="btn btn-link button" data-filter="">All</button>
       <% @categories.each do |categorie| %>
@@ -40,9 +39,10 @@
        </div>
       </div>
   <% end %>
-    <div class="center">
-    <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
-    </div>
+<div class="center hide">
+<%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
+</div>
+
 </div>
 
 
