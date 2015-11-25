@@ -15,7 +15,7 @@
           <div class="pinimage"><%= link_to image_tag("#{pin.category.image}.png") %></div> 
           <% if pin.category.name == "Video" %>
             <%= link_to '', pin_path(pin), class:'video-overlay'%>  
-            <iframe src="https://player.vimeo.com/video/<%=vimeo_id(pin.video_url)%>" width="230" height="230" frameborder="0" >  
+            <iframe width="230" height="230" src="https://player.vimeo.com/video/<%=vimeo_id(pin.video_url)%>?autoplay=1&loop=1">  
               </iframe>
           <% else %>
             <%= link_to pin_path(pin) do %>
@@ -40,10 +40,10 @@
        </div>
       </div>
   <% end %>
+    <div class="center">
+    <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+    </div>
 </div>
 
-<div class="center">
-<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
-</div>
 
 
