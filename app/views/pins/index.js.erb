@@ -1,6 +1,17 @@
-$('#pins').append('<%= j render(@pins) %>');
+// http://stackoverflow.com/a/12518779
+
+// Assign result of render pin to newItems
+var newItems = $('<%= j render(@pins) %>');
+console.log(1, newItems);
+// Append newItems to the pins container and tell isotope that there is new items to style
+$('#pins').isotope('insert', newItems);
+
+// Check if there is another page worth of pins, 
+// If there is, change the pagination to the new will_paginate result
 <% if @pins.next_page %>
-  $('.pagination').replaceWith('<%= j will_paginate(@pins) %>');
+  $('.pagination').replaceWith('<%= will_paginate(@pins) %>');
+
+// Otherwise, hide the pagination
 <% else %>
   $('.pagination').remove();
 <% end %>
