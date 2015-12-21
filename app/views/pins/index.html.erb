@@ -12,6 +12,16 @@
   <% @pins.each do |pin| %>
     <%= render "pin", pin: pin %>
   <% end %>
-
-  <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>    
+  <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>  
 </div>
+
+
+<script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
+<script>
+  var iframe = document.getElementsByTagName('iframe')[0];
+  var player = $f( iframe );
+
+   player.addEvent('ready', function() {
+       player.api('setVolume', 0); 
+   });
+</script>
