@@ -100,7 +100,16 @@
   z-index: 1;
   width: 100px; 
 }
-
+.users-avatar .text{
+  position:relative;
+  top:5px;
+  left:20px;
+  text-align:center;
+  visibility:hidden;
+}
+.users-avatar:hover .text{
+  visibility:visible;
+}
 
  .users-img {
   z-index: 100;
