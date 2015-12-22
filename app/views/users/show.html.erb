@@ -10,7 +10,9 @@
               <div id="holder">
                 <div class="users-avatar">
                  <%= image_tag @user.avatar.url(:medium) , class: 'users-img'%>
+                 <% if user_signed_in? %>
                  <span class="text">Drag and Drop Avatar</span>
+                 <% end %>
                 </div>
               </div>
               <div class="users-bio">
