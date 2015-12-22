@@ -1,6 +1,4 @@
 <%= hidden_field_tag(:user_id, @user.id) %>
-
-<%= link_to 'User list', users_path %>
   <div class="container">
     <div class="users">
         <div class="users-tilted">
@@ -17,7 +15,7 @@
               <div class="users-bio">
             <p><%=@user.bio %></p>
           <div class="users-web-link">
-            <strong><%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%></strong>  
+            <strong><%= link_to_if(@user.website_url, website_url(@user), @user.website_url, :target => "_blank")%></strong>
         </div>
       </div>
     </div>
