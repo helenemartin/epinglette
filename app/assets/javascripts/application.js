@@ -16,5 +16,6 @@
 //= require jquery.turbolinks
 //= require bootstrap
 //= require isotope.pkgd.min
+//= require masonry/jquery.masonry
 //= require imagesloaded
 //= require_tree .
