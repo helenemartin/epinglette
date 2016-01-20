@@ -4,10 +4,11 @@
 
 
 .users {
-  margin: -100px 0 15px 285px;
+  // margin: -100px 0 15px 285px;
   padding-top: 30px;
   padding-bottom:30px;
-  width: 50%;
+  width: 500px;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
   border-radius: 8px;
@@ -98,15 +99,15 @@
   z-index: 1;
   width: 100px; 
 }
-.users-avatar .text{
+.users-avatar .text {
   position:relative;
   top:5px;
   left:20px;
   text-align:center;
   visibility:hidden;
-
 }
-.users-avatar:hover .text{
+
+.users-avatar:hover .text {
 
   height: 19rem;
   width: 19rem;
@@ -118,9 +119,9 @@
   font-size: 1.55rem;
   color: #ffffff;
   visibility:visible;
-  opacity: 4;
-  background-color: rgba(0,0,0,0.5);
-  filter:alpha(opacity=100);
+  font-family: "lato", 'Helvetica';
+  background-color: rgba(0,0,0,0.4);
+  
 }
 
  .users-img {

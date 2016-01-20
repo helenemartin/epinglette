@@ -14,6 +14,15 @@ $jumbotron-bg: rgba(255,255,255,0.7);
 
 @import 'bootstrap';
 
+@font-face {
+  font-family: 'Ostrich';
+  font-weight: bold;
+  src:  font-url('/assets/ostrich-bold-webfont.eot') format('eot'), 
+      font-url('/assets/ostrich-bold-webfont.woff') format('woff'), 
+      font-url('/assets/ostrich-bold-webfont.ttf') format('truetype');
+}
+
+
 body {
 background-image: image-url(asset_path('background.jpg'));
 background-size: 93px 91px;
@@ -23,12 +32,10 @@ font-color: white;
 
 
 .logo {
-  margin-left: 75px;
-  padding: 5px;
+  margin-left: 0;
+  padding: 0;
   font-size: 100px;
-  font-family: 'Bauhaus93', "Lato", Helvetica, Arial, sans-serif;
-  
-  
+  font-family: Ostrich, Helvetica, Arial, sans-serif; 
 }
 
 
@@ -41,10 +48,11 @@ font-color: white;
   padding-top: 5px;
   margin-top: -10px;
   text-align: center;
-  position: relative;
-  z-index: 100;
+  // position: relative;
+  z-index: -3;
 
     h1{
+
       font-size: 50px;
       color: #7A7779;
 
@@ -56,8 +64,12 @@ font-color: white;
   margin-top: 110px;
 }
 
+h1 {
+  margin: 0;
+}
+
 h1#site-logo a {
-  font-size: 8.5rem;
+  font-size: 3.1rem;
   margin-bottom: 20px;
   color: #e09a84;
   opacity: 0.9;
@@ -65,7 +77,6 @@ h1#site-logo a {
 
 h1#site-logo.affix-top a {
   font-size: 8;
-
 }
 
 
@@ -79,7 +90,11 @@ h1#site-logo.affix-top a {
 
 }
 
-
+.navbar-collapse {
+  height:auto;
+  border:0;
+  box-shadow: none;
+}
 
 .navbar-inverse.navbar-default {
   position:fixed;
@@ -94,7 +109,7 @@ h1#site-logo.affix-top a {
   position: fixed;
   padding-top: 5px;
   width: 100%;
-  height: 115px;
+  height: 71px;
   top: 0;
 
 
@@ -132,7 +147,43 @@ p {
   overflow: hidden;
 }
 
+@media (min-width: 690px) {
+  .logo {
+    padding: 5px;
+    margin-left: 75px;
+  }
+  .navbar-inverse.navbar-default.affix-top {
+    height: 115px;
+  }
+  .navbar-inverse.navbar-default.affix-top  {
+    
+    height:100px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
 
+  h1#site-logo a {
+    font-size: 7.5rem;
+  }
+}
 
+@media (max-width: 783px){
+  .navbar-collapse.collapse {
+    background-color: #5c8b47;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 54px;
+    margin: 0;
+    position: fixed;
+    border-right: 1px solid #4c733b; 
+  }
+  .navbar-header {
+    height: 64px; 
+  }
 
+}
 
