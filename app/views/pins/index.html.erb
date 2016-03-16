@@ -12,7 +12,7 @@
   <% @pins.each do |pin| %>
     <%= render "pin", pin: pin %>
   <% end %>
-  <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>  
+  <div class="pagination"><%= will_paginate @pins, renderer: BootstrapPagination::Rails %></div> 
 </div>
 
 
